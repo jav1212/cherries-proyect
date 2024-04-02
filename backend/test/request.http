@@ -1,0 +1,64 @@
+###
+GET http://localhost:3001/api/lugar/registrarCdadReg HTTP/1.1
+
+###
+POST http://localhost:3001/api/lugar/registrarCdadReg HTTP/1.1
+Content-Type: application/json
+
+{
+    "tabla": "regiones",
+    "id_pais": 1,
+    "nombre": "California Nort"
+}
+
+###
+GET http://localhost:3001/api/variedad/registrar HTTP/1.1
+
+###
+GET http://localhost:3001/api/variedad/registrarPrecio HTTP/1.1
+
+###
+POST http://localhost:3001/api/variedad/registrar HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_pais":3,
+    "nombre": "prueba 444",
+    "especie": "Prunus avium",
+    "preco": "Temprana",
+    "descrip": "prueba"
+}
+
+###
+POST http://localhost:3001/api/variedad/precioActual HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_pais": 1,
+    "id_crz": 1    
+}
+
+###
+POST http://localhost:3001/api/variedad/registrarPrecio HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_pais": 1,
+    "id_crz": 1,
+    "precio": 5.3,
+    "calibre": "Large"
+
+}
+
+###
+POST http://localhost:3001/api/variedad/cancelarPrecio HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_pais": 1,
+    "id_crz": 1,
+    "id": 1
+}
+
+###
+GET 'http://localhost:3001/api/empresas/productora/registrarCultivo' HTTP/1.1
