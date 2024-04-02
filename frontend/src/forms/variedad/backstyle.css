@@ -1,0 +1,8 @@
+.back{
+    max-width: 700px;
+    border-radius: 0px;
+    background: #1f1e1e;
+    box-shadow:  -28px 28px 56px #131212,
+             28px -28px 56px #2b2a2a;
+}
+

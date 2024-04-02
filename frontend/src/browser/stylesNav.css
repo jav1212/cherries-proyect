@@ -1,0 +1,13 @@
+.nav .link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav .link:hover{
+    text-decoration: underline;
+    color: white;
+}
